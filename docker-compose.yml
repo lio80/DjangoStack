@@ -1,0 +1,11 @@
+services:
+  db:
+    image: pgvector/pgvector:0.8.0-pg17
+    env_file:
+      - .env
+    volumes:
+      - core:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  core:
