@@ -133,7 +133,8 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = 'home' # After login, redirect to the page you want.
+LOGIN_REDIRECT_URL = '/' # After login, redirect to the page you want.
+LOGOUT_REDIRECT_URL = '/' # After logout, redirect to the page you want.
 LOGIN_URL = 'login'
 
 MEDIA_URL = '/media/'
